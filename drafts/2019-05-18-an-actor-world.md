@@ -1,0 +1,17 @@
+---
+layout: post
+title: Triangoli e attori
+categories: [progetti]
+tags: [teatro,simulazione,computazione]
+---
+# Triangoli e attori
+Partiamo dall'inizio: a ottobre 2018 mi iscrivo a un [corso di improvvisazione teatrale](http://www.quintatinta.it). Boom: per qualche strana ragione inventarsi suoni e gestualità (che poi diventeranno parole, azioni, storie) in mezzo a un gruppo di gente determinata a dar via la propria dignità fa bene all'umore e favorisce la digestione. Certo, se poi si mangia salsiccia e fagioli al CecchiMangia uno va a cercarsela.
+
+Uno dei concetti base del teatro è la presenza, ossia la coscienza della propria posizione non solo nello spazio, ma anche relativamente agli altri attori in scena. Per sviluppare questa abilità, esistono ovviamente molteplici esercizi, il più importante, noioso, estenuante dei quali è la _zattera_: la regola è muoversi costantemente, immaginando però che il palco sia appunto una zattera galleggiante, la cui stabilità è determinata dall'uniformità della distribuzione degli attori, in quanto un maggiore peso in un punto la farebbe rovesciare[^1]. Il tormentone è che questo esercizio sia noiosissimo: lo è. Nessuno discute la sua utilità, ma è noiosissimo. Ovviamente, è l'esercizio più frequente; ma c'è una sua evoluzione che, se non altro, non è noiosa: sono solo due le persone da tenere sott'occhio e con esse si deve cercare di formare un triangolo equilatero. Facile, se non si fosse in dieci a seguire ognuno due persone diverse. Come si immagina, il risultato è una corsa scavezzacollo che assomiglia più a un congresso di scalmanati[^3].
+
+## Sembrerebbe un sistema di automi
+In matematica computazionale, un _automa_ è un'entità in grado di rispondere in modo molto semplice a stimoli esterni. L'esempio più semplice che mi viene in mente è _Game of Life_, una griglia in cui ogni quadratino è acceso o spento e che segue delle regole semplici per determinare il proprio stato a un istante successivo[^2]. Al mio occhio perverso, dieci o quindici persone che si muovono in base a pochi input esterni non sono altro che un modello ad automi (meno propriamente, ma più popolarmente, "agenti"). Fin qui non ci si preoccupa troppo; ma a volte il gioco fallisce e solo un tempo limite gli pone fine, altre volte (rare) riesce ed ecco tutti fermarsi soddisfatti; altre ancora sembra di essere alla fine, si rallenta, ma presto uno comincia a correre di nuovo e da capo un groviglio di corridori. _Non vi state chiedendo anche voi_ se questi comportamenti possano essere riprodotti e studiati? Ah, dite di no? Peccato per voi, dato che [qui](https://gablab.gitlab.io/an_actor_world/) trovate il programma che ho sviluppato per simulare l'esercizio e l'articolo serviva sostanzialmente a raccontarvelo.
+
+[^1]: In realtà, parlando strettamente di fisica, assumendo che la zattera sia di densità superficiale uniforme la cosa importante è che ci sia simmetria centrale rispetto al baricentro; ma non siamo qui a fare conti. O sì?
+[^2]: Una cellula viva muore se non circondata da due o tre cellule vive; una cellula morta circondata da tre cellule vive diventa viva. Sulla pagina [Wikipedia](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) si trovano vari esempi di comportamento di questo modello. Volete [provare da soli](http://pmav.eu/stuff/javascript-game-of-life-v3.1.1/)?  
+[^3]: Sapevate che "scalmanato" deriva da "scalmana", ossia raffreddore, vampata e, traslato, agitazione?

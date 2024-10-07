@@ -1,0 +1,3 @@
+[submodule "content/personal_notes"]
+	path = content/personal_notes
+	url = ../../gablab/personal_notes.git

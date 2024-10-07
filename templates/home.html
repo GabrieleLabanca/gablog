@@ -1,0 +1,46 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ site_title }}</title>
+        <link rel="stylesheet" href="./css/article.css"></style>
+        <!-- Hotjar Tracking Code for https://gablab.gitlab.io/gablog/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:1617618,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>{{ site_title }}</h1>
+        </header>
+        <main>
+            <h2>Latest Articles</h2>
+            {% if articles %}
+                <ul>
+                {% for article in articles %}
+                    <li>
+                        <a href="{{ article.path }}">{{ article.title }}</a>
+                        {% if article.date %}
+                            <span> - {{ article.date | date(format="%B %d, %Y") }}</span>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <p>No articles found.</p>
+            {% endif %}
+        </main>
+        <footer>
+            <p>&copy; {{ current_year }} {{ site_title }}. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>

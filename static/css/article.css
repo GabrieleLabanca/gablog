@@ -1,0 +1,63 @@
+body {
+    font-family: 'Merriweather', Georgia, serif;
+    line-height: 1.7;
+    color: #000000; /* Black text */
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+a {
+    color: #3E8E41; /* Muted forest green color */
+}
+
+header {
+    border-bottom: 2px solid #3E8E41; /* Muted forest green color */
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    color: #3E8E41; /* Muted forest green color */
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.meta {
+    color: #6B7280; /* Muted forest green color */
+    font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #3E8E41; /* Muted forest green color */
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.highlight {
+    background-color: #D3D3D3; /* Muted forest green color */
+    border-left: 4px solid #3E8E41; /* Muted forest green color */
+    padding: 15px 20px;
+    margin: 25px 0;
+    font-style: italic;
+}
